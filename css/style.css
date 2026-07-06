@@ -1,0 +1,124 @@
+html, body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.nav-list a {
+    padding: 0 10px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #62748e;
+    }
+}
+.lang-list button {
+    padding: 2px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: #90a1b9;
+    }
+}
+.lang-list .lang-btn.active {
+    color: #314158;
+    font-weight: 700;
+}
+.lang-list > button:not(:last-child) {
+    border-right: 1px solid #cad5e2;
+}
+
+.menu-toggle {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: #314158;
+  height: 2px;
+  width: 30px;
+  transition: all ease-in-out 500ms;
+}
+.hamburger::before {
+  transform: translateY(-7px);
+}
+
+.hamburger::after {
+  transform: translateY(6px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translateY(-2px) rotate(-90deg);
+}
+@media (min-width: 1280px) {
+  
+  .menu-toggle {
+    display: none;
+  }
+  
+}
+@media (max-width: 1279px) {
+  
+  .site-nav {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+
+    flex-direction: column;
+    padding: 100px 40px 100px 40px;
+    justify-content: center;
+
+    transform: translateY(-100%);
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .site-nav.site-nav--open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+}
+
+.btn-primary {
+    font-size: 14px;
+    background: rgba(225, 225, 225, 0.5);
+    padding: 8px 20px;
+    border-radius: 40px;
+}
+.btn-white {
+    font-size: 14px;
+    background: white;
+    padding: 8px 20px;
+    border-radius: 40px;
+}
+
+
+.contact-form {
+    max-width: 680px;
+}
+
+.contact-input {
+    background: #ffffff;
+    border: none;
+    outline: none;
+    color: #111;
+    font-size: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.contact-input::placeholder {
+    color: #7c7c7c;
+}
+

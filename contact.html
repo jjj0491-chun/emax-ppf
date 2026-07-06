@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us  | EMAX PPF</title>
+        <meta name="description" content="About Emax Paint Protection Film and our product advantages in protection, durability and heat resistance.">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./js/head.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="./js/header.js"></script>
+    </head>
+    <body>
+        <div id="header" class="fixed w-full top-0 z-10"></div>
+        <div class="pt-10 lg:pt-20">
+            <section class="contact py-20 bg-neutral-900">
+                <div class="max-w-3xl mx-auto text-center text-white px-6">
+                    <h2 class="xl:text-4xl lg:text-3xl text-2xl font-bold mb-5 text-center text-white mb-5">Contact Us</h2>
+                    <p class="text-base text-neutral-300 mb-5">info@emax-ppf.com</p>
+                    <form class="contact-form mx-auto" action="mailto:info@emax-ppf.com" method="post">
+                        <input type="text" name="name" placeholder="Name" class="contact-input w-full mb-4 rounded-full px-5 py-3">
+                        <input type="email" name="email" placeholder="Email" class="contact-input w-full mb-4 rounded-full px-5 py-3">
+                        <input type="text" name="subject" placeholder="Subject" class="contact-input w-full mb-4 rounded-full px-5 py-3">
+                        <textarea name="message" rows="7" placeholder="Type your message here..." class="contact-input w-full mb-6 rounded-[32px] px-5 py-4"></textarea>
+                        <button type="submit" class="btn-primary mx-auto block">Submit</button>
+                    </form>
+                </div>
+            </section>
+            <section class="dealer">
+                <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.425048390935!2d100.4358071758635!3d5.351919994626778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac629f364d335%3A0xc1e11fe71c880d64!2zMzksIEphbGFuIExpbWF1IE1hbmlzIDQsIFRhbWFuIExpbWF1IE1hbmlzLCAxNDAwMCBCdWtpdCBNZXJ0YWphbSwgUHVsYXUgUGluYW5nLCDppqzkvobopb_kup4!5e0!3m2!1szh-TW!2stw!4v1780020280859!5m2!1szh-TW!2stw" width="600" height="450" style="border:0; filter: grayscale(100%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+        <footer class="bg-neutral-950 text-center text-neutral-500 py-5">
+            &copy; 2026 Emax PPF All Rights Reserved.
+        </footer>
+
+        <script>
+            var swiper = new Swiper(".about-swiper", {
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+            });
+        </script>
+    </body>
+</html>
